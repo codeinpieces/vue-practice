@@ -1,0 +1,87 @@
+/* color palettes */
+:root {
+  /* Colors */
+
+  /* Whites */
+  --white: #ffffff;
+  --white-soft: #f8f8f8;
+  --white-mute: #f2f2f2;
+  --white-gray: #dadada;
+  --white-dark: #c8c8c8;
+  /* Blacks */
+  --black: #181818;
+  --black-soft: #222222;
+  --black-mute: #282828;
+  --black-gray: #050210;
+  --black-light: #0b0a14;
+
+  /* Neutrals */
+  --indigo: #2c3e50;
+  --forest-shadow: #123232;
+  --real-wamp: rgb(92, 53, 103);
+
+  /* Reds */
+  --main-red: #c83c3c;
+  --dark-red: rgb(134, 0, 0);
+  --glow-red: rgb(255, 56, 56);
+  /* Green */
+  --main-green: #398c3c;
+  --dark-green: rgb(42, 57, 43);
+  --glow-green: hsla(160, 100%, 37%, 1);
+  /* Blue */
+  --main-blue: steelblue;
+  --dark-blue: rgb(32, 32, 83);
+  --glow-blue: #123232;
+
+  /* Dividers */
+  --divider-light-1: rgba(60, 60, 60, 0.29);
+  --divider-light-2: rgba(60, 60, 60, 0.12);
+  --divider-dark-1: rgba(84, 84, 84, 0.65);
+  --divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  /* Text Colors */
+  --text-light-main: var(--white-gray);
+  --text-light-dimmed: var(--white-gray);
+
+  --text-dark-main: var(--black-light);
+  --text-dark-dimmed: rgba(235, 235, 235, 0.64);
+
+  --text-light-red: var(--white-gray);
+  --text-light-green: var(--white-gray);
+  --text-light-blue: var(--white-gray);
+
+  --text-dark-red: rgba(60, 60, 60, 0.66);
+  --text-dark-green: rgba(60, 60, 60, 0.66);
+  --text-dark-blue: rgba(60, 60, 60, 0.66);
+
+  /* semantic color variables for this project */
+
+  /* Default Dark */
+  --main-background: var(--black-soft);
+  --secondary-background: var(--black-mute);
+  --dark-background: var(--black);
+  --alternative-background: var(--white-soft);
+
+  --color-border: var(--divider-dark-2);
+  --color-border-hover: var(--divider-dark-1);
+
+  --color-heading: var(--text-light-main);
+  --color-text: var(--text-light-dimmed);
+
+  --color-text-link: var(--glow-green);
+}
+
+@media (prefers-color-scheme: white) {
+  /* semantic color variables for this project */
+  :root {
+    --color-background: var(--white);
+    --color-background-soft: var(--white-soft);
+    --color-background-mute: var(--white-mute);
+
+    --color-border: var(--divider-light-1);
+    --color-border-hover: var(--divider-light-2);
+
+    --color-heading: var(--text-light-1);
+    --color-text: var(--text-light-2);
+  }
+}

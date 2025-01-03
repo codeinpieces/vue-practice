@@ -1,0 +1,27 @@
+@import './base.css';
+
+/*  */
+body {
+  color: var(--main-text);
+  background: var(--main-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-size: 16px;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+}
+
+/*  */
+@media (min-width: 1024px) {
+  body {
+  }
+
+  #app {
+  }
+}
